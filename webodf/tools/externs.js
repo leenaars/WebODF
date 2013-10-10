@@ -33,7 +33,7 @@
  * @source: http://www.webodf.org/
  * @source: https://github.com/kogmbh/WebODF/
  */
-/*global Packages, HTMLStyleElement, window, XMLHttpRequest, HTMLStyleElement, Document, NodeFilter, Range*/
+/*global Packages, HTMLStyleElement, window, XMLHttpRequest, HTMLStyleElement, Document, NodeFilter, Range, XSLTProcessor */
 /*jslint nomen: false, emptyblock: true, unparam: true */
 /**
  * @constructor
@@ -617,6 +617,7 @@ Range.END_TO_END = 2;
 Range.END_TO_START = 3;
 
 /**
+<<<<<<< HEAD
  * https://dvcs.w3.org/hg/dom3events/raw-file/tip/html/DOM3-Events.html#interface-CompositionEvent
  * @constructor
  * @extends Event
@@ -639,3 +640,13 @@ function TextEvent() { "use strict"; }
  * @type {!string}
  */
 TextEvent.prototype.data;
+/**
+ * @param {!Document} doc
+ * @return {undefined}
+ */
+XSLTProcessor.prototype.importStylesheet = function (doc) {"use strict"; };
+/**
+ * @param {!Node} node
+ * @return {Document}
+ */
+XSLTProcessor.prototype.transformToDocument = function (node) {"use strict"; };
