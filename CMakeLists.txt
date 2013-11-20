@@ -364,6 +364,10 @@ set(UNTYPEDLIBJSFILES
     lib/gui/SelectionController.js
     lib/gui/TextController.js
     lib/gui/SessionController.js
+    lib/gui/SessionView.js
+    lib/gui/CaretManager.js
+    lib/gui/UndoStateRules.js
+    lib/gui/TrivialUndoManager.js
     lib/gui/CaretManager.js
     lib/gui/SessionView.js
 )
