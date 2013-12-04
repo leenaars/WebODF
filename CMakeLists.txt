@@ -308,19 +308,31 @@ set(UNTYPEDLIBJSFILES
     lib/ops/Member.js
     lib/ops/StepsTranslator.js
     lib/xmldom/RelaxNGParser.js
+    lib/xmled/XmlCaret.js
+    lib/xmled/XsdChecker.js
 # These files depend on files that are not 100% typed.
     lib/ops/OdtCursor.js
     lib/ops/OdtDocument.js
-    lib/ops/Operation.js
     lib/xmldom/RelaxNG.js
     lib/xmldom/RelaxNG2.js
+    lib/xmled/ValidationModel.js
+    lib/xmled/XmlCanvas.js
     lib/gui/Caret.js
     lib/gui/EventManager.js
     lib/gui/InputMethodEditor.js
     lib/gui/ShadowCursor.js
+    lib/ops/Document.js
+    lib/ops/EditInfo.js
+    lib/ops/Operation.js
+    lib/xmled/AttributeEditor.js
+    lib/xmled/CrumbBar.js
+    lib/xmled/XmlDocument.js
+    lib/xmled/XmlEditor.js
+    lib/gui/EditInfoMarker.js
+    lib/gui/SelectionView.js
+    lib/gui/SelectionViewManager.js
     lib/gui/UndoManager.js
     lib/gui/UndoStateRules.js
-    lib/ops/EditInfo.js
     lib/ops/OpAddAnnotation.js
     lib/ops/OpAddCursor.js
     lib/ops/OpAddMember.js
@@ -349,7 +361,7 @@ set(UNTYPEDLIBJSFILES
     lib/ops/OperationTransformMatrix.js
     lib/ops/OperationTransformer.js
     lib/ops/TrivialOperationRouter.js
-    lib/gui/EditInfoMarker.js
+    lib/xmled/SessionController.js
     lib/gui/PlainTextPasteboard.js
     lib/gui/SelectionView.js
     lib/gui/SelectionViewManager.js
@@ -368,6 +380,13 @@ set(UNTYPEDLIBJSFILES
     lib/gui/CaretManager.js
     lib/gui/UndoStateRules.js
     lib/gui/TrivialUndoManager.js
+    lib/ops/Session.js
+    lib/gui/AnnotationController.js
+    lib/gui/DirectParagraphStyler.js
+    lib/gui/DirectTextStyler.js
+    lib/gui/ImageManager.js
+    lib/gui/TextManipulator.js
+    lib/gui/SessionController.js
     lib/gui/CaretManager.js
     lib/gui/SessionView.js
 )
