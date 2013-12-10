@@ -276,6 +276,7 @@ set(TYPEDLIBJSFILES
     lib/ops/Server.js
     lib/xmldom/LSSerializerFilter.js
     lib/xmldom/XPath.js
+    lib/xmled/XsdChecker.js
     lib/core/Cursor.js
     lib/core/PositionFilter.js
     lib/core/PositionFilterChain.js
@@ -290,8 +291,14 @@ set(TYPEDLIBJSFILES
     lib/ops/TextPositionFilter.js
     lib/xmldom/LSSerializer.js
     lib/gui/MimeDataExporter.js
+    lib/xmled/ValidationModel.js
+    lib/xmled/XmlCaret.js
     lib/gui/Clipboard.js
     lib/odf/OdfContainer.js
+    lib/xmled/AttributeEditor.js
+    lib/xmled/CrumbBar.js
+    lib/xmled/XmlCanvas.js
+    lib/xmled/XmlEditor.js
     lib/odf/FontLoader.js
     lib/odf/ObjectNameGenerator.js
     lib/odf/Formatting.js
@@ -308,15 +315,11 @@ set(UNTYPEDLIBJSFILES
     lib/ops/Member.js
     lib/ops/StepsTranslator.js
     lib/xmldom/RelaxNGParser.js
-    lib/xmled/XmlCaret.js
-    lib/xmled/XsdChecker.js
 # These files depend on files that are not 100% typed.
     lib/ops/OdtCursor.js
     lib/ops/OdtDocument.js
     lib/xmldom/RelaxNG.js
     lib/xmldom/RelaxNG2.js
-    lib/xmled/ValidationModel.js
-    lib/xmled/XmlCanvas.js
     lib/gui/Caret.js
     lib/gui/EventManager.js
     lib/gui/InputMethodEditor.js
@@ -324,10 +327,7 @@ set(UNTYPEDLIBJSFILES
     lib/ops/Document.js
     lib/ops/EditInfo.js
     lib/ops/Operation.js
-    lib/xmled/AttributeEditor.js
-    lib/xmled/CrumbBar.js
     lib/xmled/XmlDocument.js
-    lib/xmled/XmlEditor.js
     lib/gui/EditInfoMarker.js
     lib/gui/SelectionView.js
     lib/gui/SelectionViewManager.js
