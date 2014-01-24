@@ -210,6 +210,18 @@ gui.TrivialUndoManager = function TrivialUndoManager(defaultRules) {
     /**
      * @inheritDoc
      */
+    this.purgeInitialState = function () {
+        undoStates.length = 0;
+        redoStates.length = 0;
+        initialState.length = 0;
+        currentUndoState.length = 0;
+        initialDoc = null;
+        emitStackChange();
+    };
+
+    /**
+     * @inheritDoc
+     */
     this.resetInitialState = function () {
         undoStates.length = 0;
         redoStates.length = 0;
@@ -223,7 +235,7 @@ gui.TrivialUndoManager = function TrivialUndoManager(defaultRules) {
      * Sets the initial document state and operation state. This is the earliest
      * point in time the document can be rewound to.
      */
-    this.saveInitialState = function () {
+    function setInitialState() {
         var annotationViewManager = document.getOdfCanvas().getAnnotationViewManager();
 
         if (annotationViewManager) {
@@ -260,7 +272,7 @@ gui.TrivialUndoManager = function TrivialUndoManager(defaultRules) {
     /**
      * @inheritDoc
      */
-    this.initialize = function() {
+    this.initialize = function () {
         if (!initialDoc) {
             setInitialState();
         }

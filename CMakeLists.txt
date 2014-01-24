@@ -290,15 +290,15 @@ set(TYPEDLIBJSFILES
     lib/odf/TextSerializer.js
     lib/ops/TextPositionFilter.js
     lib/xmldom/LSSerializer.js
-    lib/gui/MimeDataExporter.js
     lib/xmled/ValidationModel.js
     lib/xmled/XmlCaret.js
-    lib/gui/Clipboard.js
+    lib/gui/MimeDataExporter.js
     lib/odf/OdfContainer.js
     lib/xmled/AttributeEditor.js
     lib/xmled/CrumbBar.js
     lib/xmled/XmlCanvas.js
     lib/xmled/XmlEditor.js
+    lib/gui/Clipboard.js
     lib/odf/FontLoader.js
     lib/odf/ObjectNameGenerator.js
     lib/odf/Formatting.js
@@ -331,6 +331,7 @@ set(UNTYPEDLIBJSFILES
     lib/gui/EditInfoMarker.js
     lib/gui/SelectionView.js
     lib/gui/SelectionViewManager.js
+    lib/gui/SvgSelectionView.js
     lib/gui/UndoManager.js
     lib/gui/UndoStateRules.js
     lib/ops/OpAddAnnotation.js
@@ -363,9 +364,6 @@ set(UNTYPEDLIBJSFILES
     lib/ops/TrivialOperationRouter.js
     lib/xmled/SessionController.js
     lib/gui/PlainTextPasteboard.js
-    lib/gui/SelectionView.js
-    lib/gui/SelectionViewManager.js
-    lib/gui/SvgSelectionView.js
     lib/gui/TrivialUndoManager.js
     lib/ops/Session.js
     lib/gui/AnnotationController.js
@@ -375,17 +373,6 @@ set(UNTYPEDLIBJSFILES
     lib/gui/ImageController.js
     lib/gui/SelectionController.js
     lib/gui/TextController.js
-    lib/gui/SessionController.js
-    lib/gui/SessionView.js
-    lib/gui/CaretManager.js
-    lib/gui/UndoStateRules.js
-    lib/gui/TrivialUndoManager.js
-    lib/ops/Session.js
-    lib/gui/AnnotationController.js
-    lib/gui/DirectParagraphStyler.js
-    lib/gui/DirectTextStyler.js
-    lib/gui/ImageManager.js
-    lib/gui/TextManipulator.js
     lib/gui/SessionController.js
     lib/gui/CaretManager.js
     lib/gui/SessionView.js
