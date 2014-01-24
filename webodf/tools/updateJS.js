@@ -74,7 +74,6 @@ function Main() {
             "gui/StyleHelper.js",
             "odf/FontLoader.js",
             "odf/Formatting.js",
-            "odf/MetadataManager.js",
             "odf/Namespaces.js",
             "odf/ObjectNameGenerator.js",
             "odf/OdfCanvas.js",
@@ -336,14 +335,21 @@ function Main() {
             }
         }
         if (sorted.length === lastLength) {
-            console.log("Unresolvable circular dependency. Check relations between ");
+            missing = [];
             for (i = 0; i < l; i += 1) {
                 p = pathModule.normalize(list[i]);
                 if (!defined.hasOwnProperty(p)) {
+                    missing.push(p);
                     console.log(p);
                 }
             }
-            process.exit(1);
+            if (missing.length) {
+                console.log("Unresolvable circular dependency. Check relations between ");
+                for (i = 0; i < missing.length; i += 1) {
+                    console.log(missing[i]);
+                }
+                process.exit(1);
+            }
         }
         return sorted;
     }
